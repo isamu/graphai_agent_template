@@ -1,0 +1,31 @@
+{
+  "name": "agent_sample",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "eslint": "eslint",
+    "format": "prettier --write '{src,tests,samples}/**/*.ts'",
+    "test": "node --test  -r tsconfig-paths/register --require ts-node/register ./tests/test_*.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphai/agent_filters": "^0.0.5",
+    "@graphai/vanilla": "^0.0.3",
+    "@receptron/test_utils": "^0.0.4",
+    "@types/node": "^20.8.7",
+    "eslint": "^9.2.0",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^7.8.0"
+  },
+  "dependencies": {
+    "graphai": "^0.5.1",
+    "yaml": "^2.4.5"
+  }
+}
