@@ -44,7 +44,7 @@ AgentFunctionInfoはAgent本体とinputs/params/resultのサンプルの値、Ag
 Agentのファイルは、agentを含むパッケージ情報(`AgentFunctionInfo`)を`defaule export`します。
 
 ```typescript
-import { AgentFunctionInfo } from "graphai/lib/type";
+import { AgentFunctionInfo } from "graphai";
 
 const sampleInput = [{message: "hello"}, {message: "test"}];
 const sampleParams = { sample: "123" };
@@ -100,7 +100,7 @@ inputs, paramsのペアを使ってAgentを実行、結果とresultが一致す�
 
 ```typescript
 import sampleAgentInfo from "@/sample_agent";
-import { agentTestRunner } from "graphai/lib/utils/test_utils";
+import { agentTestRunner } from "@receptron/test_utils";
 
 agentTestRunner(sampleAgentInfo);
 ```
