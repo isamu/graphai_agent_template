@@ -24,7 +24,7 @@ const sampleAgentInfo: AgentFunctionInfo = {
   description: "Sample agent",
   author: "isamu arimoto",
   category: ["LLM"],
-  repository: "https://github.com/isamu/graphai_doc",
+  repository: "https://github.com/isamu/graphai_agent_template",
   license: "MIT",
 };
 

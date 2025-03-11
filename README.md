@@ -63,7 +63,7 @@ const sampleAgentInfo: AgentFunctionInfo = {
   ],
   description: "Sample agent",
   author: "isamu arimoto",
-  repository: "https://github.com/isamu/graphai_doc",
+  repository: "https://github.com/isamu/graphai_agent_template",
   license: "MIT",
 };
 
@@ -128,10 +128,10 @@ sampleAgentでは、Agentの関数で`{ params, namedInputs }`を受け取りま
 実際は`AgentFunctionContext`の情報を受け取っています。
 
 - params
-  - GraphDataのyaml/jsonのparamsで与えられる値
+  - GraphDataのyaml/jsonの`params`で与えられる値
 - namedInputs
-  - GraphDataのinputsで指定される値。前に実行したAgentの結果や、static nodeでの値、inputsに書かれた値など。
-  - namedInputsはObjetで渡されます
+  - GraphDataの`inputs`で指定される値。前に実行したAgentの結果や、Static nodeでの値、inputsに書かれた値など。
+  - namedInputsはObjectで渡されます
 
 基本的にはこの２つ入力として受け取り、Agentの処理をします。結果はreturnで返します。
 Agentの結果は、次に実行されるAgentのinputsなどで利用されます。(inputの記述方法は別途解説します)
