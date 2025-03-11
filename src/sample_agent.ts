@@ -1,14 +1,14 @@
 import { AgentFunction, AgentFunctionInfo } from "graphai";
 
-const sampleAgent: AgentFunction = async ({ params, inputs }) => {
-  return { params, inputs };
+const sampleAgent: AgentFunction = async ({ params, namedInputs }) => {
+  return { params, namedInputs };
 };
 
 // for test and document
 
 const sampleInput = [{ message: "hello" }, { message: "test" }];
 const sampleParams = { sample: "123" };
-const sampleResult = { inputs: sampleInput, params: sampleParams };
+const sampleResult = { namedInputs: sampleInput, params: sampleParams };
 
 const sampleAgentInfo: AgentFunctionInfo = {
   name: "sampleAgent",
