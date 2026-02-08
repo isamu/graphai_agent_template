@@ -13,9 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@graphai/agent_filters": "^1.0.0",
-    "@graphai/vanilla": "^1.0.9",
-    "@receptron/test_utils": "^1.0.2",
+    "@graphai/agent_filters": "^2.0.1",
+    "@graphai/vanilla": "^2.0.12",
+    "@receptron/test_utils": "^2.0.3",
     "@types/node": "^25.2.2",
     "eslint": "^10.0.0",
     "globals": "^17.3.0",
@@ -27,7 +27,7 @@
     "typescript-eslint": "^8.54.0"
   },
   "dependencies": {
-    "graphai": "^1.0.1",
+    "graphai": "^2.0.16",
     "yaml": "^2.8.2"
   }
 }
