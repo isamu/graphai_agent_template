@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && tsc-alias",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint",
     "format": "prettier --write '{src,tests,samples}/**/*.ts'",
     "test": "node --test  -r tsconfig-paths/register --require ts-node/register ./tests/test_*.ts"
@@ -16,18 +17,18 @@
     "@graphai/agent_filters": "^2.0.1",
     "@graphai/vanilla": "^2.0.12",
     "@receptron/test_utils": "^2.0.3",
-    "@types/node": "^26.1.1",
-    "eslint": "^10.0.0",
-    "globals": "^17.7.0",
-    "prettier": "^3.8.5",
-    "ts-node": "^10.9.1",
-    "tsc-alias": "^1.8.16",
+    "@types/node": "^26.1.2",
+    "eslint": "^10.8.0",
+    "globals": "^17.8.0",
+    "prettier": "^3.9.6",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.9.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "6.0.3",
-    "typescript-eslint": "^8.54.0"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.65.0"
   },
   "dependencies": {
-    "graphai": "^2.0.16",
-    "yaml": "^2.8.2"
+    "graphai": "^2.0.18",
+    "yaml": "^2.9.0"
   }
 }
