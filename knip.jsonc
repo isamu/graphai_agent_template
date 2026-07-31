@@ -1,0 +1,26 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  // This is a GraphAI agent scaffold. The deliverable is src/sample_agent.ts (the agent that a
+  // user copies and builds); package.json "main" points at a build output that has no source
+  // index, so knip cannot auto-detect a source entry — it is declared here. Every tests/*.ts is
+  // a standalone script run by `node --test`, so they are entry points, not analyzed source.
+  "entry": ["src/sample_agent.ts", "tests/**/*.ts"],
+  "project": ["src/**/*.ts"],
+  "ignoreExportsUsedInFile": true,
+  "includeEntryExports": false,
+  "rules": {
+    // Warn mode: every rule is "warn" (reported, exit 0) or "off". Nothing gates CI here.
+    "files": "warn",
+    "dependencies": "warn",
+    "devDependencies": "warn",
+    "unlisted": "warn",
+    "exports": "warn",
+    "types": "warn",
+    "unresolved": "off",
+    "binaries": "off",
+    "nsExports": "off",
+    "nsTypes": "off",
+    "enumMembers": "off",
+    "duplicates": "off",
+  },
+}
